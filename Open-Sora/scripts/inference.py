@@ -288,8 +288,11 @@ def main():
                 for idx, batch_prompt in enumerate(batch_prompts):
                     if verbose >= 2:
                         logger.info("Prompt: %s", batch_prompt)
-                    save_path = save_paths[idx]
+                    prompt_i = prompts[i]
+                    save_path = os.path.join(save_dir, prompt_i)
                     video = [video_clips[i][idx] for i in range(loop)]
+                    # save_path = save_paths[idx]
+                    # video = [video_clips[i][idx] for i in range(loop)]
                     for i in range(1, loop):
                         video[i] = video[i][:, dframe_to_frame(condition_frame_length) :]
                     video = torch.cat(video, dim=1)

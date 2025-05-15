@@ -36,7 +36,10 @@ def fresh_ratio_scheduler(cache_dic, current):
         layer_factor = 1 + layer_weight - 2 * layer_weight * current['layer'] / 27
 
         module_weight = 1.5
+        #0.85
         module_time_weight = 0.33
+        #0.8
+        # module_time_weight = 0.66
         module_factor = (1 - (1-module_time_weight) * module_weight) if current['module']=='cross-attn' else (1 + module_time_weight * module_weight)
         
         # set for temporal and spatial branch

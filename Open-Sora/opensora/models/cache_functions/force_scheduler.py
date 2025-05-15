@@ -11,17 +11,17 @@ def force_scheduler(cache_dic, current):
     threshold = torch.round(cache_dic['fresh_threshold'] / step_factor)
 
     # Here we set force activation cycles for different modules separately.
-    thresholds = {
-        'spat-attn' : 3,
-        'temp-attn' : 3,
-       'cross-attn' : 6,
-              'mlp' : 3   }
+    # thresholds = {
+    #     'spat-attn' : 3,
+    #     'temp-attn' : 3,
+    #    'cross-attn' : 6,
+    #           'mlp' : 3   }
     
-    #thresholds = {
-    #    'spat-attn' : 2,
-    #    'temp-attn' : 2,
-    #   'cross-attn' : 2,
-    #          'mlp' : 2   }
+    thresholds = {
+       'spat-attn' : 2,
+       'temp-attn' : 2,
+      'cross-attn' : 2,
+             'mlp' : 2   }
 
     cache_dic['cal_threshold'] = thresholds
     #return threshold

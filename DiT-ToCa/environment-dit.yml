@@ -1,4 +1,4 @@
-name: base
+name: dit-toca
 channels:
   - pytorch
   - nvidia

@@ -1,4 +1,4 @@
-Metadata-Version: 2.1
+Metadata-Version: 2.4
 Name: opensora
 Version: 1.2.0
 Summary: Democratizing Efficient Video Production for All
@@ -105,6 +105,17 @@ Requires-Dist: fairscale>=0.4.13; extra == "full"
 Requires-Dist: decord==0.6.0; extra == "full"
 Requires-Dist: pytorchvideo==0.1.5; extra == "full"
 Requires-Dist: lpips==0.1.4; extra == "full"
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: project-url
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
 
 <p align="center">
     <img src="./assets/readme/icon.png" width="250"/>
